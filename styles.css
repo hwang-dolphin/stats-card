@@ -1,0 +1,167 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root
+{
+	--veryDarkBlue: hsl(233, 47%, 7%);
+	--darkDesaturatedBlue: hsl(244, 38%, 16%);
+	--softViolet: hsl(277, 64%, 61%);
+
+	--mainHeadingWhite: hsl(0, 0%, 100%);
+	--transparentWhiteMainParagraph: hsla(0, 0%, 100%, 0.75);
+	--transparentWhiteStatHeadings: hsla(0, 0%, 100%, 0.6);
+
+	--cornerRadius: 7px;
+
+	--fontSize: 15px;
+}
+
+body{
+	background-color: var(--veryDarkBlue);
+
+}
+
+.card
+{
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	width:78vw;
+	height:56vh;
+
+	border-radius: var(--cornerRadius);
+}
+
+
+.card-left
+{
+	width:50%;
+	height:100%;
+
+	float: left;
+
+	border-top-left-radius: var(--cornerRadius);
+	border-bottom-left-radius: var(--cornerRadius);
+
+	background-color: var(--darkDesaturatedBlue);
+	
+	padding: 65px;	
+}
+
+
+.card-left p:nth-child(1)
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	color: var(--mainHeadingWhite);
+	font-size: 30px;
+ 	line-height: 1.4;	
+}
+
+.card-left span
+{
+	font-family: 'Inter', sans-serif;
+    font-weight: 400;
+   	color: var(--softViolet);
+   	font-size: 30px;
+    line-height: 1.4;
+}
+
+.card-left p:nth-child(2)
+{
+	font-family: 'Lexend Deca', sans-serif;
+	color: var(--transparentWhiteMainParagraph);
+	font-weight: 400;
+	
+	font-size: var(--fontSize);
+	line-height: 1.6;
+
+	margin-top: 10px;
+	margin-bottom: 40px;	
+}
+
+
+.card-left p:nth-child(n+3):nth-child(-n+4)
+{
+	font-family: 'Inter', sans-serif;
+ 	font-weight: 400;
+ 	color: var(--mainHeadingWhite);
+ 	font-size: 20px;
+ 	line-height: 1.4;
+
+	display: inline;
+	margin-right: 100px;
+}
+
+
+.card-left p:nth-child(5)
+{
+	font-family: 'Inter', sans-serif;
+ 	font-weight: 400;
+ 	color: var(--mainHeadingWhite);
+ 	font-size: 20px;
+ 	line-height: 1.4;
+   
+	display: inline;
+	margin-left: 0px;
+}
+
+.card-left p:nth-child(n+6):nth-child(-n+7)
+{
+	font-family: 'Lexend Deca', sans-serif;
+ 	color: var(--transparentWhiteMainParagraph);
+ 	font-weight: 400;
+
+ 	font-size: 12px;
+	line-height: 1.6;
+
+	display: inline;
+ 
+	margin-right: 70px;
+}
+
+.card-left p:nth-child(8)
+{
+	font-family: 'Lexend Deca', sans-serif;
+	color: var(--transparentWhiteMainParagraph);
+	font-weight: 400;
+
+	font-size: 12px;
+	line-height: 1.6;
+ 
+	display: inline;
+    
+    margin-left: 0px;
+}
+
+.card-right
+{
+	width:50%;
+	height:100%;
+
+	float: left;
+
+	border-top-right-radius: var(--cornerRadius);
+	border-bottom-right-radius: var(--cornerRadius);	
+
+	background-color: hsl(277, 64%, 61%);	
+}
+
+img
+{
+	
+	min-width: 100%;
+	max-height: 100%;
+	
+	border-top-right-radius: var(--cornerRadius);
+ 	border-bottom-right-radius: var(--cornerRadius);
+
+	mix-blend-mode: multiply;
+}
